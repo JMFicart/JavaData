@@ -64,10 +64,13 @@ public class ProfessorDAOImpl implements ProfessorDAO {
         // créer professor
         Professor p = new Professor();
 
-        p.setId(rs.getInt("section_id"));
-        p.setNom(rs.getString("section_name"));
+        p.setId(rs.getInt("professor_id"));
+        p.setFirstname(rs.getString("professor_name"));
+        p.setLastname(rs.getString("professor_surname"));
+        p.setSection(rs.getInt("section_id"));
+        p.setWage(rs.getInt("professor_wage"));
 
-        long stId = rs.getLong("student_id");
+        int stId = rs.getInt("student_id");
         Student st = null;
 
         if(stId != 0){
