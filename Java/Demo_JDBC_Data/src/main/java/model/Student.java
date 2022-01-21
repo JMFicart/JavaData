@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
+//@ToString(exclude = "responsableDe")
 public class Student {
     private long id;
     private String firstname;

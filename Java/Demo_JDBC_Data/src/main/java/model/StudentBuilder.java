@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.sql.Date;
 
 public class StudentBuilder {
-    private long id;
+    private int id;
 //    private String firstname = "Inconnu";
 //    private String lastname;
     private LocalDate birthdate;
@@ -18,7 +18,7 @@ public class StudentBuilder {
 //    }
 
     // constructor chainé
-    public StudentBuilder id(long id) {
+    public StudentBuilder id(int id) {
         this.id = id;
         return this;
     }

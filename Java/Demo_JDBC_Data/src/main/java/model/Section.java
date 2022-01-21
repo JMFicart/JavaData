@@ -1,24 +1,24 @@
 package model;
 
 public class Section {
-    private long id;
+    private int id;
     private String nom;
     private Student delegue;
 
     public Section() {
     }
 
-    public Section(long id, String nom, Student delegue) {
+    public Section(int id, String nom, Student delegue) {
         this.id = id;
         this.nom = nom;
         this.delegue = delegue;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
